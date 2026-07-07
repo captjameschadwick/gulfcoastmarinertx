@@ -19,11 +19,12 @@ body {
 }
 
 .logo-container img {
-    width: 160px !important;   /* smaller, clean size */
-    max-width: 160px !important;
+    width: 150px !important;      /* FINAL enforced size */
+    max-width: 150px !important;
     height: auto !important;
     display: block;
     margin: 0 auto;
+    object-fit: contain !important;
 }
 
 /* NAVIGATION */
@@ -108,16 +109,6 @@ section h3 {
     text-align: center;
 }
 
-.service-link {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px 15px;
-    background: #003049;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
 /* MEDIA */
 .media {
     padding: 40px 20px;
@@ -172,7 +163,7 @@ section h3 {
     text-decoration: none;
 }
 
-/* DIGITAL BUSINESS CARD — QR CODE */
+/* QR CODE */
 .qr-section {
     text-align: center;
     padding: 40px 20px;
@@ -204,4 +195,25 @@ img[src*="qrcode"] {
 }
 
 .contact-list {
-    list-style: none
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin: 12px 0;
+}
+
+.contact-list a {
+    color: #003049;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #003049;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}

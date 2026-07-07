@@ -1,4 +1,4 @@
-/* RESET */
+/* GLOBAL RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,15 +7,15 @@
 }
 
 body {
-    background: #ffffff !important;
+    background: #ffffff;
     color: #222;
     line-height: 1.6;
 }
 
-/* NAV */
+/* NAVIGATION */
 .main-nav {
     background: #003049;
-    padding: 10px 0;
+    padding: 12px 0;
     text-align: center;
 }
 
@@ -23,34 +23,21 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 12px;
-}
-
-/* HEADER */
-.main-header {
-    text-align: center;
-    padding: 20px;
-    background: #e9ecef;
-}
-
-.logo-container img {
-    width: 180px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    margin: 0 14px;
+    font-size: 16px;
 }
 
 /* HERO */
 .hero {
-    background: #d9e6f2;
+    background: #d9e6f2; /* Light blue fallback */
     padding: 60px 20px;
     text-align: center;
 }
 
 .hero-text {
-    background: #ffffffd9;
+    background: rgba(255,255,255,0.85);
     color: #003049;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     max-width: 700px;
     margin: auto;
@@ -67,11 +54,11 @@ body {
     text-decoration: none;
 }
 
-/* SECTIONS */
+/* SECTION HEADERS */
 section h3 {
     text-align: center;
     margin: 40px 0 20px;
-    font-size: 24px;
+    font-size: 26px;
     color: #003049;
 }
 
@@ -79,7 +66,7 @@ section h3 {
 .about {
     max-width: 900px;
     margin: auto;
-    padding: 20px;
+    padding: 25px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -95,7 +82,7 @@ section h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .service-card {
@@ -107,9 +94,26 @@ section h3 {
     text-align: center;
 }
 
+.service-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #003049;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 /* MEDIA */
 .media {
     padding: 40px 20px;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .media-card {
@@ -133,6 +137,13 @@ section h3 {
     padding: 40px 20px;
 }
 
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
 .review-card {
     background: #fff;
     padding: 20px;
@@ -141,28 +152,31 @@ section h3 {
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* DIGITAL CARD — FORCE SMALL SIZE */
-.qr-section img {
-    width: 80px !important;      /* Hard limit */
-    max-width: 80px !important;  /* Prevents stretching */
-    height: auto !important;
+.review-card a {
+    color: #003049;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* DIGITAL BUSINESS CARD — CLEAN QR SIZE */
+.qr-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+img[src*="qrcode"] {
+    width: 115px;        /* Perfect balanced size */
+    max-width: 115px;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* MOBILE — EVEN SMALLER */
+/* MOBILE QR SIZE */
 @media (max-width: 600px) {
-    .qr-section img {
-        width: 70px !important;
-        max-width: 70px !important;
-    }
-}
-
-/* MOBILE FIX */
-@media (max-width: 600px) {
-    .qr-section img {
-        width: 90px;   /* Even smaller on phones */
-        max-width: 90px;
+    img[src*="qrcode"] {
+        width: 95px;
+        max-width: 95px;
     }
 }
 
@@ -176,27 +190,26 @@ section h3 {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin: 12px 0;
+}
+
+.contact-list a {
+    color: #003049;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* FOOTER */
 footer {
     background: #003049;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     margin-top: 40px;
-}
-/* FORCE QR CODE SMALL — DIRECT TARGET */
-img[src*="qrcode"] {
-    width: 70px !important;
-    max-width: 70px !important;
-    height: auto !important;
-    display: block;
-    margin: 0 auto;
-}
-
-/* MOBILE — EVEN SMALLER */
-@media (max-width: 600px) {
-    img[src*="qrcode"] {
-        width: 55px !important;
-        max-width: 55px !important;
-    }
 }

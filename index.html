@@ -1,214 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulf Coast Mariner Services & Logistics</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-<body>
+body {
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
 
-<!-- NAVIGATION -->
-<nav class="main-nav">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#media">Photos & Video</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#qr">Digital Card</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:+13617171225">Call Me</a></li>
-    </ul>
-</nav>
+/* NAVIGATION */
+.main-nav {
+    background: #003049;
+    padding: 10px 0;
+    text-align: center;
+}
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h2>Professional Marine Services on the Gulf Coast</h2>
-        <p>Captain James Chadwick Sr. · USCG 100 Ton Master</p>
-        <p>Serving the Coastal Bend and Gulf Coast waterways with experience, patience, and professionalism.</p>
-        <a href="tel:+13617171225" class="hero-button">Call 361‑717‑1225</a>
-    </div>
-</section>
+.main-nav ul {
+    list-style: none;
+}
 
-<!-- ABOUT -->
-<section id="about" class="about">
-    <h3>About Captain James Chadwick Sr.</h3>
+.main-nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
 
-    <p>
-        Captain James Chadwick Sr. is a USCG 100 Ton Master with deep roots in the Gulf Coast.
-        He brings years of real-world operational experience across the Coastal Bend, supporting
-        vessel movements, marine logistics, and safe boating practices for clients and crews.
-    </p>
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-    <p>
-        Known for his calm, patient instruction style, James helps new boaters build confidence
-        on the water while providing dependable support for families, charters, and marine
-        projects. His work reflects a commitment to safety, professionalism, and clear
-        communication in every operation.
-    </p>
+/* HEADER */
+.main-header {
+    text-align: center;
+    padding: 20px;
+    background: #e9ecef;
+}
 
-    <p>
-        Gulf Coast Mariner Services & Logistics represents James’s dedication to the waterways
-        he grew up on—offering reliable captain services, hands-on training, and trustworthy
-        marine support throughout the Gulf Coast region.
-    </p>
-</section>
+.brand-bar h1 {
+    font-size: 26px;
+    color: #003049;
+    margin-bottom: 10px;
+}
 
-<!-- SERVICES -->
-<section id="services" class="services">
-    <h3>Marine Services</h3>
-    <div class="service-grid">
+.logo-container img {
+    width: 180px;
+    height: auto;
+}
 
-        <div class="service-card">
-            <h4>Captain Services</h4>
-            <p>Professional vessel operation, charter support, and trip planning across the Gulf Coast.</p>
-            <a href="https://gulfcoastmarinerservices.square.site" target="_blank" class="service-link">
-                Book Captain Services
-            </a>
-        </div>
+/* HERO */
+.hero {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
 
-        <div class="service-card">
-            <h4>Logistics & Support</h4>
-            <p>Dockside coordination, vessel movements, and marine project support.</p>
-            <a href="https://gulfcoastmarinerservices.square.site" target="_blank" class="service-link">
-                Book Logistics Support
-            </a>
-        </div>
+.hero-text {
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        <div class="service-card">
-            <h4>Training & Mentorship</h4>
-            <p>Hands-on instruction for new boaters, crew, and students entering the marine industry.</p>
-            <a href="https://gulfcoastmarinerservices.square.site" target="_blank" class="service-link">
-                Book Training
-            </a>
-        </div>
+.hero-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #ffba08;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+}
 
-    </div>
-</section>
+/* SECTION HEADERS */
+section h3 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 24px;
+    color: #003049;
+}
 
-<!-- MEDIA -->
-<section id="media" class="media">
-    <h3>Photos & Video</h3>
-    <p>Real operations, training moments, and life on the Gulf Coast.</p>
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px 40px;
+    background: #fff;
+    border-radius: 10px;
+}
 
-    <div class="media-grid">
+/* SERVICES */
+.services {
+    background: #e9ecef;
+    padding: 40px 20px;
+}
 
-        <!-- FEATURED VIDEO -->
-        <div class="media-card">
-            <h4>Featured Video</h4>
-            <p>On-the-water short from Gulf Coast Mariner Services & Logistics.</p>
-            <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/0cI5QyVJHEc"
-                    title="Gulf Coast Mariner Services & Logistics"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        <!-- YOUTUBE -->
-        <div class="media-card">
-            <h4>YouTube Channel</h4>
-            <p>More long-form videos and walkthroughs.</p>
-            <a href="https://youtube.com/@gulfcoastmarinerservices" target="_blank" class="media-link">
-                Visit YouTube Channel
-            </a>
-        </div>
+.service-card {
+    background: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
 
-        <!-- TIKTOK -->
-        <div class="media-card">
-            <h4>TikTok</h4>
-            <p>Short clips, quick tips, and behind-the-scenes moments.</p>
-            <a href="https://www.tiktok.com/@gulfcoastmarinerservices" target="_blank" class="media-link">
-                Visit TikTok
-            </a>
-        </div>
+.service-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #003049;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
 
-        <!-- INSTAGRAM -->
-        <div class="media-card">
-            <h4>Instagram</h4>
-            <p>Photos from the Gulf Coast, vessels, and training days.</p>
-            <a href="https://www.instagram.com/gulfcoastmariner" target="_blank" class="media-link">
-                Visit Instagram
-            </a>
-        </div>
+/* MEDIA */
+.media {
+    padding: 40px 20px;
+}
 
-        <!-- FACEBOOK -->
-        <div class="media-card">
-            <h4>Facebook</h4>
-            <p>Updates, posts, and community connections.</p>
-            <a href="https://www.facebook.com/share/196Q2CcHSn/" target="_blank" class="media-link">
-                Visit Facebook
-            </a>
-        </div>
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-    </div>
-</section>
+.media-card {
+    background: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
 
-<!-- REVIEWS -->
-<section id="reviews" class="reviews">
-    <h3>Reviews</h3>
-    <p>Verified customer feedback from Google Maps and Facebook.</p>
+.video-wrapper iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
 
-    <div class="reviews-grid">
+/* REVIEWS */
+.reviews {
+    background: #e9ecef;
+    padding: 40px 20px;
+}
 
-        <!-- GOOGLE MAPS -->
-        <div class="review-card">
-            <h4>Google Maps Reviews</h4>
-            <ul>
-                <li><a href="https://goo.gl/maps/PGpajRJ5wGffji1w6" target="_blank">Google Review Link 1</a></li>
-                <li><a href="https://goo.gl/maps/F3RBVowgCE9emKEHA" target="_blank">Google Review Link 2</a></li>
-                <li><a href="https://goo.gl/maps/veVmsdSbQeKSPerr6" target="_blank">Google Review Link 3</a></li>
-            </ul>
-        </div>
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-        <!-- FACEBOOK -->
-        <div class="review-card">
-            <h4>Facebook Reviews</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/share/p/1DC8s2Xi3c/" target="_blank">Facebook Review 1</a></li>
-                <li><a href="https://www.facebook.com/share/p/1UcG8D2keZ/" target="_blank">Facebook Review 2</a></li>
-                <li><a href="https://www.facebook.com/share/p/179f4EfpZ1/" target="_blank">Facebook Review 3</a></li>
-                <li><a href="https://www.facebook.com/share/p/18vpeAqajL/" target="_blank">Facebook Review 4</a></li>
-            </ul>
-        </div>
+.review-card {
+    background: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
 
-    </div>
-</section>
+.review-card ul {
+    list-style: none;
+    padding-left: 0;
+}
 
-<!-- DIGITAL CARD -->
-<section id="qr" class="qr-section">
-    <h3>Digital Business Card</h3>
-    <p>Scan or tap below to connect instantly.</p>
-    <a href="https://gulfcoastmarinerservices.square.site" target="_blank" class="qr-link">
-        <img src="images/qrcode.png" alt="Digital Business Card QR Code">
-    </a>
-</section>
+.review-card a {
+    color: #003049;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h3>Contact & Booking</h3>
-    <p>Ready to plan a trip, move a vessel, or schedule training?</p>
-    <ul class="contact-list">
-        <li><strong>Phone:</strong> <a href="tel:+13617171225">361‑717‑1225</a></li>
-        <li><strong>Online Booking:</strong> <a href="https://gulfcoastmarinerservices.square.site" target="_blank">Square Booking</a></li>
-        <li><strong>Location:</strong> <a href="https://maps.app.goo.gl/xVorFL5a5qXAJ4jF6" target="_blank">Google Maps</a></li>
-        <li><strong>YouTube:</strong> <a href="https://youtube.com/@gulfcoastmarinerservices" target="_blank">@gulfcoastmarinerservices</a></li>
-        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@gulfcoastmarinerservices" target="_blank">@gulfcoastmarinerservices</a></li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/gulfcoastmariner" target="_blank">@gulfcoastmariner</a></li>
-        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/share/196Q2CcHSn/" target="_blank">Gulf Coast Mariner Services</a></li>
-    </ul>
-</section>
+/* DIGITAL CARD */
+.qr-section {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Gulf Coast Mariner Services & Logistics · Gulf Coast, USA</p>
-</footer>
+.qr-section img {
+    width: 200px;
+    height: auto;
+}
 
-</body>
-</html>
+/* CONTACT */
+.contact {
+    background: #fff;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+}
+
+.contact-list a {
+    color: #003049;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #003049;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

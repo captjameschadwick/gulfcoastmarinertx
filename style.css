@@ -184,3 +184,19 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+/* FORCE QR CODE SMALL — DIRECT TARGET */
+img[src*="qrcode"] {
+    width: 70px !important;
+    max-width: 70px !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* MOBILE — EVEN SMALLER */
+@media (max-width: 600px) {
+    img[src*="qrcode"] {
+        width: 55px !important;
+        max-width: 55px !important;
+    }
+}

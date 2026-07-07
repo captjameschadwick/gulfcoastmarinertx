@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #ffffff; /* Bright clean background */
+    background: #ffffff !important; /* Force bright background */
     color: #222;
     line-height: 1.6;
 }
@@ -19,20 +19,12 @@ body {
     text-align: center;
 }
 
-.main-nav ul {
-    list-style: none;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin: 0 12px;
-}
-
 .main-nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
+    margin: 0 12px;
 }
 
 /* HEADER */
@@ -42,14 +34,8 @@ body {
     background: #e9ecef;
 }
 
-.brand-bar h1 {
-    font-size: 26px;
-    color: #003049;
-    margin-bottom: 10px;
-}
-
 .logo-container img {
-    width: 200px;
+    width: 180px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -57,16 +43,15 @@ body {
 
 /* HERO */
 .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
-    padding: 80px 20px;
+    background: #d9e6f2; /* Light blue fallback */
+    padding: 60px 20px;
     text-align: center;
-    color: #fff;
 }
 
 .hero-text {
-    background: rgba(255,255,255,0.65); /* MUCH lighter overlay */
-    color: #003049; /* Dark text for readability */
-    padding: 25px;
+    background: #ffffffd9; /* Light overlay */
+    color: #003049;
+    padding: 20px;
     border-radius: 10px;
     max-width: 700px;
     margin: auto;
@@ -123,26 +108,9 @@ section h3 {
     text-align: center;
 }
 
-.service-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #003049;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-}
-
 /* MEDIA */
 .media {
     padding: 40px 20px;
-}
-
-.media-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
 .media-card {
@@ -166,13 +134,6 @@ section h3 {
     padding: 40px 20px;
 }
 
-.reviews-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
 .review-card {
     background: #fff;
     padding: 20px;
@@ -181,20 +142,9 @@ section h3 {
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.review-card a {
-    color: #003049;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 /* DIGITAL CARD */
-.qr-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
 .qr-section img {
-    width: 200px;
+    width: 150px; /* Smaller QR */
     height: auto;
 }
 
@@ -206,21 +156,6 @@ section h3 {
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.contact-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.contact-list li {
-    margin: 10px 0;
-}
-
-.contact-list a {
-    color: #003049;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 /* FOOTER */

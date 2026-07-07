@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f5f7fa;
+    background: #ffffff; /* Bright clean background */
     color: #222;
     line-height: 1.6;
 }
@@ -49,8 +49,10 @@ body {
 }
 
 .logo-container img {
-    width: 180px;
+    width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* HERO */
@@ -62,9 +64,12 @@ body {
 }
 
 .hero-text {
-    background: rgba(0,0,0,0.45);
-    padding: 20px;
+    background: rgba(255,255,255,0.65); /* MUCH lighter overlay */
+    color: #003049; /* Dark text for readability */
+    padding: 25px;
     border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
 }
 
 .hero-button {
@@ -90,14 +95,15 @@ section h3 {
 .about {
     max-width: 900px;
     margin: auto;
-    padding: 0 20px 40px;
-    background: #fff;
+    padding: 20px;
+    background: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* SERVICES */
 .services {
-    background: #e9ecef;
+    background: #f1f5f9;
     padding: 40px 20px;
 }
 
@@ -156,7 +162,7 @@ section h3 {
 
 /* REVIEWS */
 .reviews {
-    background: #e9ecef;
+    background: #f1f5f9;
     padding: 40px 20px;
 }
 
@@ -173,11 +179,6 @@ section h3 {
     width: 280px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-.review-card ul {
-    list-style: none;
-    padding-left: 0;
 }
 
 .review-card a {
@@ -204,6 +205,7 @@ section h3 {
     max-width: 900px;
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .contact-list {

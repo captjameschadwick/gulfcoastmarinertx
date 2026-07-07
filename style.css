@@ -5,10 +5,17 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
 /* LOGO */
 .logo-container {
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .logo-container img {
@@ -16,11 +23,6 @@
     height: auto;
     display: block;
     margin: 0 auto;
-}
-body {
-    background: #ffffff;
-    color: #222;
-    line-height: 1.6;
 }
 
 /* NAVIGATION */
@@ -40,7 +42,7 @@ body {
 
 /* HERO */
 .hero {
-    background: #d9e6f2; /* Light blue fallback */
+    background: #d9e6f2;
     padding: 60px 20px;
     text-align: center;
 }
@@ -169,21 +171,20 @@ section h3 {
     text-decoration: none;
 }
 
-/* DIGITAL BUSINESS CARD — CLEAN QR SIZE */
+/* DIGITAL BUSINESS CARD — QR CODE */
 .qr-section {
     text-align: center;
     padding: 40px 20px;
 }
 
 img[src*="qrcode"] {
-    width: 115px;        /* Perfect balanced size */
+    width: 115px;
     max-width: 115px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* MOBILE QR SIZE */
 @media (max-width: 600px) {
     img[src*="qrcode"] {
         width: 95px;
@@ -202,25 +203,4 @@ img[src*="qrcode"] {
 }
 
 .contact-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.contact-list li {
-    margin: 12px 0;
-}
-
-.contact-list a {
-    color: #003049;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* FOOTER */
-footer {
-    background: #003049;
-    color: #fff;
-    text-align: center;
-    padding: 18px;
-    margin-top: 40px;
-}
+    list-style: none

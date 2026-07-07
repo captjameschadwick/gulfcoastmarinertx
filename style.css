@@ -12,15 +12,16 @@ body {
     line-height: 1.6;
 }
 
-/* LOGO */
+/* LOGO — HARD SIZE LIMIT */
 .logo-container {
     text-align: center;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .logo-container img {
-    width: 220px;
-    height: auto;
+    width: 160px !important;   /* smaller, clean size */
+    max-width: 160px !important;
+    height: auto !important;
     display: block;
     margin: 0 auto;
 }

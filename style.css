@@ -1,4 +1,4 @@
-/* GLOBAL RESET */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -35,19 +35,19 @@ body {
     color: #00aaff;
 }
 
-/* LOGO — TWICE AS BIG */
+/* LOGO */
 .logo-container {
     text-align: center;
-    margin: 30px 0 10px 0;
+    margin: 20px 0;
 }
 
-.large-logo {
-    max-width: 480px !important;   /* doubled size */
+.site-logo {
+    max-width: 240px;   /* SMALLER LOGO */
     width: 100%;
-    height: auto !important;
+    height: auto;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     background: url('images/hero.jpg') center/cover no-repeat;
     padding: 80px 20px;
@@ -56,13 +56,15 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 6px #000;
 }
 
 .hero-text p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .hero-button {
@@ -78,7 +80,7 @@ body {
     background: #00aaff;
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 .about {
     padding: 40px 20px;
     text-align: center;
@@ -87,6 +89,25 @@ body {
 .about h3 {
     font-size: 28px;
     margin-bottom: 15px;
+}
+
+/* CAPTAIN */
+.captain {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.captain h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.captain p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* SERVICES */
@@ -120,7 +141,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* MEDIA SECTION */
+/* MEDIA */
 .media {
     padding: 40px 20px;
     text-align: center;
@@ -168,16 +189,16 @@ body {
     box-shadow: 0 0 10px #ccc;
 }
 
-/* QR CODE — BIGGER */
+/* QR CODE */
 .qr-section {
     text-align: center;
     padding: 40px 20px;
 }
 
-.large-qr {
-    max-width: 360px !important;
+.qr-image {
+    max-width: 260px;   /* QR CODE VISIBLE */
     width: 100%;
-    height: auto !important;
+    height: auto;
 }
 
 /* CONTACT */

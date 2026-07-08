@@ -5,7 +5,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.logo-container img {
+    max-width: 320px;   /* increase size */
+    height: auto;
+}
 body {
     background: #ffffff;
     color: #222;
@@ -86,7 +89,10 @@ section h3 {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
+.qr-section img {
+    max-width: 300px;   /* increase size */
+    height: auto;
+}
 /* SERVICES */
 .services {
     background: #f1f5f9;
@@ -184,7 +190,7 @@ img[src*="qrcode"] {
     }
 }
 
-/* CONTACT */
+/*l CONTACT */
 .contact {
     background: #fff;
     padding: 40px 20px;

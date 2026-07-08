@@ -14,7 +14,13 @@ body {
     color: #222;
     line-height: 1.6;
 }
-
+.large-logo {
+    width: 100%;
+    max-width: 500px !important;   /* forces logo to be large */
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
 /* LOGO — HARD SIZE LIMIT */
 .logo-container {
     text-align: center;

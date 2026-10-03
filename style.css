@@ -223,3 +223,28 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+#boating, #academy, #services, #captain, #contact {
+    background: #f2f8ff;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px auto;
+}
+.header-contact {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
